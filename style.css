@@ -1,0 +1,56 @@
+@import url('https://fonts.cdnfonts.com/css/lorjuk');
+@import url('https://fonts.cdnfonts.com/css/gingercookies');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+list-style: none;
+text-decoration: none;
+}
+
+/* HEADER */
+
+.container-principal{
+display: flex;
+justify-content: center;
+box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
+.container-box-encabezado{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 80px;
+}
+
+.container-box-encabezado ul{
+display: flex;
+flex-direction: row;
+}
+
+a{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+font-family: 'Lorjuk', sans-serif;
+font-family: 'GingerCookies', sans-serif;
+font-size: 1.4rem;
+color: black;
+margin: 40px;
+}
+
+#button{
+width: 90px;
+height: 35px;
+background-color: rgb(243, 88, 179);
+background-color: #F893D2;
+border: 1px solid black;
+border-radius: 30px;
+}
+
+
+/* MAIN/ BOX GREETING */
+
