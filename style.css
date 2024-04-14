@@ -1,5 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/lorjuk');
-@import url('https://fonts.cdnfonts.com/css/gingercookies');
+
 
 *{
 margin: 0;
@@ -9,20 +8,24 @@ list-style: none;
 text-decoration: none;
 }
 
+body{
+background-color: #ffe4ff;;
+}
+
 /* HEADER */
 
 .container-principal{
 display: flex;
-justify-content: center;
-box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+justify-content: flex-end;
+background-color:white;
 }
 
 .container-box-encabezado{
 display: flex;
-justify-content: center;
+justify-content: flex-end;
 align-items: center;
 width: 100%;
-height: 80px;
+height: 55px;
 }
 
 .container-box-encabezado ul{
@@ -31,26 +34,62 @@ flex-direction: row;
 }
 
 a{
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100%;
-font-family: 'Lorjuk', sans-serif;
-font-family: 'GingerCookies', sans-serif;
-font-size: 1.4rem;
-color: black;
+font-size: 0.9rem;
+font-weight: bold;
 margin: 40px;
+/* color: #f549d2;
+color: black; */
 }
 
 #button{
-width: 90px;
-height: 35px;
+width: 150px;
+text-align: center;
+color: white;
 background-color: rgb(243, 88, 179);
-background-color: #F893D2;
-border: 1px solid black;
+background-color: #ff67e1;;
+padding: 10px;
+border: 1px solid white;
 border-radius: 30px;
 }
 
 
 /* MAIN/ BOX GREETING */
+
+.container-greeting{
+display: flex;
+height: 100vh;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.box-greeting{
+display: flex;
+flex-direction: column;
+}
+
+.title-greeting{
+display: flex;
+flex-direction: column;
+font-size: 2rem;
+}
+
+.title-name{
+color: #f549d2;
+font-size: 4.3rem;
+}
+
+.description-greeting{
+font-size: 1.2rem;
+}
+
+.box-img{
+display: flex;
+border: 5px inset #ea8dd8;
+border-radius: 200px;
+}
+
+.box-img img{
+width: 320px;
+height: 320px;
+}
 
