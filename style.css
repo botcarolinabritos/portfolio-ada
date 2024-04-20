@@ -47,23 +47,22 @@ a {
 }
 
 a:hover{
-    color: black;
+    color: #61DCFE;
 }
 
 #button {
     width: 150px;
     text-align: center;
     color: white;
-    background-color: rgb(243, 88, 179);
-    background-color: #ff67e1;
+    background-color: #ff67e1; 
     padding: 10px;
     border: 1px solid #f549d2;
     border-radius: 30px;
 }
 
-#button:hover{
-    color: black;
-}
+/* #button:hover{
+    color: #61DCFE;
+} */
 
 
 /* MAIN / BOX-GREETING */
@@ -74,6 +73,11 @@ a:hover{
     justify-content: space-evenly;
     align-items: center;
     background-color: #ffe4ff;
+    /*background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+     background-image: radial-gradient(circle at center right, rgb(255,184,229),rgb(97,198,255));
+    background-image: radial-gradient(circle at bottom right, rgb(247,190,250),rgb(250,130,210),rgb(117,220,244));
+    background-image: radial-gradient(circle at bottom right, rgb(248,150,232),rgb(254,178,240),rgb(117,220,244));
+    background-image: radial-gradient(circle at bottom right, rgb(248,150,232),rgb(254,178,240),rgb(77,225,255)); */
 }
 
 .box-greeting {
@@ -126,16 +130,17 @@ a:hover{
     background-color: #e9e9e959;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
 }
 
 .box-knowledge {
-    height: calc(100% - 20vh);
+    height: 50vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .title-knowledge {
@@ -206,6 +211,8 @@ a:hover{
     width: 100%;
     height: 50vh;
     background-color: #FFE3FF;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-image: radial-gradient(circle at bottom right, rgb(248,150,232),rgb(254,178,240),rgb(77,225,255));
     display: flex;
     flex-direction: column;
     justify-content: space-around;
