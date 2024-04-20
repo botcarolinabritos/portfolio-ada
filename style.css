@@ -201,3 +201,21 @@ a:hover{
 .box-react img {
     width: 75px;
 }
+
+.container-box-quote{
+    width: 100%;
+    height: 50vh;
+    background-color: #FFE3FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.box-quote{
+    display: flex;
+    justify-content: space-around;
+}
+
+.author-quote{
+    font-style: italic;
+}
