@@ -1,118 +1,162 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio Carolina</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Portfolio Carolina</title>
-</head>
+  <body>
+    <header class="container-principal">
+      <nav class="container-box-encabezado">
+        <ul>
+          <li><a href="#greeting">HOLA!</a></li>
+          <li><a href="#knowledge">CONOCIMIENTOS</a></li>
+          <li><a href="#projects">PROYECTOS</a></li>
+          <li><a id="button" href="#">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <header class="container-principal">
-    <nav class="container-box-encabezado">
-      <ul>
-        <li><a href="#">HOLA!</a></li>
-        <li><a href="#">CONOCIMIENTOS</a></li>
-        <li><a href="#">PROYECTOS</a></li>
-        <li><a id="button" href="">CONTACTO</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main class="container-box-greeting">
+      <a id="greeting" href="#"></a>
+      <section class="container-greeting">
+        <div class="box-greeting">
+          <h1 class="title-greeting">
+            ¡Hola! Soy <span class="title-name">Carolina</span>
+          </h1>
+          <p class="description-greeting">
+            Desarrolladora y proteccionista de animales.
+          </p>
+          <a id="button" href="#projects">LO QUE HAGO</a>
+        </div>
+        <figure class="box-img">
+          <img src="./assets/profile-pic.png" alt="profile-pic"/>
+        </figure>
+      </section>
 
-  <main class="container-box-greeting">
-    <section class="container-greeting">
-      <div class="box-greeting">
-        <h1 class="title-greeting">
-          ¡Hola! Soy <span class="title-name">Carolina</span>
-        </h1>
-        <p class="description-greeting">Desarrolladora y proteccionista de animales.</p>
-        <a id="button" href="">LO QUE HAGO</a>
-      </div>
-      <figure class="box-img">
-        <img src="./assets/profile-pic.png" alt="profile-pic" />
-      </figure>
-    </section>
-
-    <section class="container-knowledge">
-      <div class="box-knowledge">
-        <h2 class="title-knowledge">Mis conocimientos</h2>
-        <p class="description-knowledge">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque deserunt
-          pariatur officiis omnis maxime ratione explicabo quia!</p>
-      </div>
-      <div class="box-card-knowledge">
-        <div class="box box-html5">
-          <img src="./assets/assets-knowlegde/html5.png" alt="logo-html">
+      <section class="container-knowledge">
+        <div class="box-knowledge">
+          <a id="knowledge" href="#"></a>
+          <h2 class="title-knowledge">Mis conocimientos</h2>
+          <p class="description-knowledge">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
+            deserunt pariatur officiis omnis maxime ratione explicabo quia!
+          </p>
+        </div>
+        <div class="box-card-knowledge">
+          <div class="box box-html5">
+            <img src="./assets/assets-knowlegde/html5.png" alt="logo-html"/>
             <p class="box-card-txt">HTML 5</p>
-        </div>
-        <div class="box box-css3">
-            <img src="./assets/assets-knowlegde/css.png" alt="logo-css3">
+          </div>
+          <div class="box box-css3">
+            <img src="./assets/assets-knowlegde/css.png" alt="logo-css3"/>
             <p class="box-card-txt">CSS 3</p>
-        </div>
-        <div class="box box-git">
-            <img src="./assets/assets-knowlegde/git.png" alt="logo-git">
+          </div>
+          <div class="box box-git">
+            <img src="./assets/assets-knowlegde/git.png" alt="logo-git"/>
             <p class="box-card-txt">GIT</p>
-        </div>
-        <div class="box box-javascript">
-          <img src="./assets/assets-knowlegde/JavaScript-logo.png" alt="logo-javascript">
+          </div>
+          <div class="box box-javascript">
+            <img src="./assets/assets-knowlegde/JavaScript-logo.png" alt="logo-javascript"/>
             <p>JavaScript</p>
-        </div>
-        <div class="box box-sass">
-          <img src="./assets/assets-knowlegde/sass.png" alt="logo-sass">
+          </div>
+          <div class="box box-sass">
+            <img src="./assets/assets-knowlegde/sass.png" alt="logo-sass"/>
             <p>Sass</p>
-        </div>
-        <div class="box box-react">
-      <img src="./assets/assets-knowlegde/react.png" alt="logo-react">
+          </div>
+          <div class="box box-react">
+            <img src="./assets/assets-knowlegde/react.png" alt="logo-react"/>
             <p>React</p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="container-box-quote">
-      <figure class="box-quote">
-        <img src="./assets/corazon.png" alt="">
-      </figure>
-      <blockquote class="description-quote" >"If you want to dominate something, teach it. The more you teach, the better you learn. Teaching is a powerful tool for learning"</blockquote>
-      <h4 class="author-quote">Richard Feynman</h4>
-    </section>
+      <section class="container-box-quote">
+        <figure class="box-quote">
+          <img src="./assets/corazon.png" alt="" />
+        </figure>
+        <blockquote class="description-quote">
+          "If you want to dominate something, teach it. The more you teach, the
+          better you learn. Teaching is a powerful tool for learning"
+        </blockquote>
+        <h4 class="author-quote">Richard Feynman</h4>
+      </section>
 
-    <section class="container-box-project">
-      <div class="box-project">
-        <h2 class="title-project">Mis proyectos</h2>
-        <p class="description-project">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ad voluptates consectetur, repudiandae, facilis praesentium possimus, modi aliquam itaque fugit et veniam? Dolor quibusdam esse, delectus repellendus velit ad quae.</p>
-      </div>
-      <div class="card-box-project">
-        <div class="card box-portfolio">
-          <img src="./assets/assets-project/portfolio-img.png" alt="imagen-portfolio">
+      <section class="container-box-project">
+        <div class="box-project">
+          <a id="projects" href="#"></a>
+          <h2 class="title-project">Mis proyectos</h2>
+          <p class="description-project">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ad
+            voluptates consectetur, repudiandae, facilis praesentium possimus,
+            modi aliquam itaque fugit et veniam? Dolor quibusdam esse, delectus
+            repellendus velit ad quae.
+          </p>
+        </div>
+        <div class="card-box-project">
+          <div class="card box-portfolio">
+            <img
+              src="./assets/assets-project/portfolio-img.png"
+              alt="imagen-portfolio"
+            />
             <p class="proj-card-txt">Portfolio</p>
-        </div>
-        <div class="card box-generador">
-            <img src="./assets/css.png" alt="imagen-generador-memes">
+          </div>
+          <div class="card box-generador">
+            <img src="./assets/css.png" alt="imagen-generador-memes" />
             <p class="proj-card-txt">Generador de memes</p>
-        </div>
-        <div class="card box-match">
-            <img src="./assets//git.png" alt="imagen-match3">
+          </div>
+          <div class="card box-match">
+            <img src="./assets//git.png" alt="imagen-match3" />
             <p class="proj-card-txt">Match 3</p>
-        </div>
-        <div class="card box-gastos">
-          <img src="./assets/JavaScript-logo.png" alt="imagen-controlador-gastos">
+          </div>
+          <div class="card box-gastos">
+            <img
+              src="./assets/JavaScript-logo.png"
+              alt="imagen-controlador-gastos"
+            />
             <p class="proj-card-txt">Controlador de gastos</p>
-        </div>
-        <div class="card box-admin">
-          <img src="./assets/sass.png" alt="imagen-administrador-reuniones">
+          </div>
+          <div class="card box-admin">
+            <img src="./assets/sass.png" alt="imagen-administrador-reuniones" />
             <p class="proj-card-txt">Administrador de reuniones</p>
-        </div>
-        <div class="card box-app">
-      <img src="./assets/react.png" alt="imagen-todo-app">
+          </div>
+          <div class="card box-app">
+            <img src="./assets/react.png" alt="imagen-todo-app" />
             <p class="proj-card-txt">Todo app</p>
+          </div>
+          <div class="card box-buscador">
+            <img src="./assets/react.png" alt="imagen-buscador-peliculas" />
+            <p class="proj-card-txt">Buscador de películas</p>
+          </div>
         </div>
-        <div class="card box-buscador">
-          <img src="./assets/react.png" alt="imagen-buscador-peliculas">
-                <p class="proj-card-txt">Buscador de películas</p>
-            </div>
-      </div>
-    </section>
-  </main>
-</body>
+      </section>
 
+      <section class="container-box-contact">
+        <div class="box-contact">
+          <h2>Contactame</h2>
+          <p class="contact-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
+            placeat libero assumenda itaque accusantium dolor!
+          </p>
+          <div class="box-contact-logos">
+            <a href="">twitter</a>
+            <a href="">github</a>
+            <a href="">linkedin</a>
+            <a href="">gmail</a>
+          </div>
+        </div>
+
+        <fieldset>
+          <label for="name">Nombre</label>
+          <input type="text" name="name" placeholder="Tu Nombre" />
+          <label for="surname">Apellido</label>
+          <input type="text" name="surname" placeholder="Tu Apellido" />
+          <label for="surname">Email</label>
+          <input type="text" name="surname" placeholder="Tu Apellido" />
+        </fieldset>
+      </section>
+    </main>
+  </body>
 </html>

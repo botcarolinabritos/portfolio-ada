@@ -134,10 +134,7 @@ a:hover{
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    background-color: white;
-    /* background-color: #a7cbf86c;*/
-    background-color: #FFE3FF; 
-    padding-top: 50px;
+    background-color: #FFE3FF;
     padding-bottom: 70px;
 }
 
@@ -150,7 +147,7 @@ a:hover{
 
 .title-knowledge {
     font-size: 2.3rem;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .description-knowledge {
@@ -261,7 +258,7 @@ a:hover{
     align-items: center;
     background-color: #ffe4ff;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 10px;
     padding-bottom: 80px;
 }
 
@@ -279,7 +276,7 @@ a:hover{
 .description-project {
     width: 400px;
     padding-top: 10px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
 }
 
 .card-box-project{
@@ -348,4 +345,66 @@ a:hover{
 
 .proj-card-txt{
     padding-bottom: 15px;
+}
+
+
+/* MAIN / CONTACT */
+
+.container-box-contact{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box-contact{
+    width: 450px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #f15ad3;
+    border-radius: 5px;
+}
+
+.contact-description{
+    width: 300px;
+    /* margin-top: 20px; */
+    /* margin-bottom: 30px; */
+}
+
+.box-contact-logos{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: #61DCFE;
+    border-radius: 10px;
+}
+
+.box-contact-logos a{
+    margin: 15px;
+}
+
+
+/* MAIN / FORM */
+
+fieldset{
+    width: 300px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label{
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
