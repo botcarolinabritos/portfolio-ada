@@ -76,11 +76,7 @@ a:hover{
     height: 100vh;
     justify-content: space-evenly;
     align-items: center;
-    /* background-color: #ffe4ff; */
-    background-image: url(./assets/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: #d25af73b;
 }
 
 .box-greeting {
@@ -128,6 +124,7 @@ a:hover{
 /* MAIN / BOX-KNOWLEDGE */
 
 .container-knowledge {
+    max-width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -147,7 +144,6 @@ a:hover{
 
 .title-knowledge {
     font-size: 2.3rem;
-    padding-top: 20px;
 }
 
 .description-knowledge {
@@ -297,8 +293,13 @@ a:hover{
     height: 260px;
     background-color: white;
     border-radius: 15px;
-    border: 1px solid #4d4c4d1c;
+    border: 1px inset #4d4c4d3f;
     margin: 15px 15px 15px 15px;
+}
+
+.card:hover{
+    border: solid 1px;
+    color: #f549d2;
 }
 
 .box-portfolio img{
@@ -351,35 +352,50 @@ a:hover{
 /* MAIN / CONTACT */
 
 .container-box-contact{
+    max-width: 100%;
     height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+.container-contact-form{
+    max-width: 100%;
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+    background: #ffe4ff;
+    border: 2px outset #61DCFE;
+    background-image: radial-gradient(circle at bottom right,rgb(77,225,255) ,rgb(254,178,240),rgb(248,150,232));
+    border-radius: 15px;
+}
 
 .box-contact{
-    width: 450px;
-    height: 70%;
+    /* width: 450px; */
+    height: 50vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-    border: 1px solid #f15ad3;
-    border-radius: 5px;
+}
+
+.box-contact h2{
+    margin-top: 15px;
 }
 
 .contact-description{
     width: 300px;
-    /* margin-top: 20px; */
-    /* margin-bottom: 30px; */
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 30px; 
 }
 
 .box-contact-logos{
     width: 300px;
+    height: 500px;
     display: flex;
     flex-direction: column;
-    background-color: #61DCFE;
+    justify-content: space-around;
+    background-color: #fff;
     border-radius: 10px;
 }
 
@@ -390,21 +406,72 @@ a:hover{
 
 /* MAIN / FORM */
 
-fieldset{
-    width: 300px;
-    height: 50vh;
+.container-box-form{
+    height: 55vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-label{
+.box-name-surname{
+    /* width: 450px; */
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+legend{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.box-name-surname input{
+    margin-right: 20px;
+}
+
+.box-name-surname label{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.box-email-message{
+    display: flex;
+    flex-direction: column;
+}
+
+.box-email-message label{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 input{
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    padding: 4px;
+    border: 1px solid #d25af7;
+    border-radius: 10px;
+    outline: 1px solid #ea8dd8 ;
 }
+
+#text-area{
+    border: 1px solid #d25af7;
+    outline: 1px solid #ea8dd8 ;
+}
+
+#send{
+    width: 80px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 8px;
+}
+
+#send:hover{
+    color: #d25af7;
+    font-weight: bolder;
+    background: #FFE3FF;
+} 

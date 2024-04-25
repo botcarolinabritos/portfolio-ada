@@ -32,7 +32,7 @@
           <a id="button" href="#projects">LO QUE HAGO</a>
         </div>
         <figure class="box-img">
-          <img src="./assets/profile-pic.png" alt="profile-pic"/>
+          <img src="./assets/profile-pic.png" alt="profile-pic" />
         </figure>
       </section>
 
@@ -47,27 +47,30 @@
         </div>
         <div class="box-card-knowledge">
           <div class="box box-html5">
-            <img src="./assets/assets-knowlegde/html5.png" alt="logo-html"/>
+            <img src="./assets/assets-knowlegde/html5.png" alt="logo-html" />
             <p class="box-card-txt">HTML 5</p>
           </div>
           <div class="box box-css3">
-            <img src="./assets/assets-knowlegde/css.png" alt="logo-css3"/>
+            <img src="./assets/assets-knowlegde/css.png" alt="logo-css3" />
             <p class="box-card-txt">CSS 3</p>
           </div>
           <div class="box box-git">
-            <img src="./assets/assets-knowlegde/git.png" alt="logo-git"/>
+            <img src="./assets/assets-knowlegde/git.png" alt="logo-git" />
             <p class="box-card-txt">GIT</p>
           </div>
           <div class="box box-javascript">
-            <img src="./assets/assets-knowlegde/JavaScript-logo.png" alt="logo-javascript"/>
+            <img
+              src="./assets/assets-knowlegde/JavaScript-logo.png"
+              alt="logo-javascript"
+            />
             <p>JavaScript</p>
           </div>
           <div class="box box-sass">
-            <img src="./assets/assets-knowlegde/sass.png" alt="logo-sass"/>
+            <img src="./assets/assets-knowlegde/sass.png" alt="logo-sass" />
             <p>Sass</p>
           </div>
           <div class="box box-react">
-            <img src="./assets/assets-knowlegde/react.png" alt="logo-react"/>
+            <img src="./assets/assets-knowlegde/react.png" alt="logo-react" />
             <p>React</p>
           </div>
         </div>
@@ -134,28 +137,55 @@
       </section>
 
       <section class="container-box-contact">
-        <div class="box-contact">
-          <h2>Contactame</h2>
-          <p class="contact-description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
-            placeat libero assumenda itaque accusantium dolor!
-          </p>
-          <div class="box-contact-logos">
-            <a href="">twitter</a>
-            <a href="">github</a>
-            <a href="">linkedin</a>
-            <a href="">gmail</a>
+        <div class="container-contact-form">
+          <div class="box-contact">
+            <h2>Contactame</h2>
+            <p class="contact-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+              provident quibusdam, maiores vel error maxime voluptatum assumenda
+              ex totam corrupti. Fugiat, excepturi quam molestiae.
+            </p>
+            <div class="box-contact-logos">
+              <a href="">twitter</a>
+              <a href="">github</a>
+              <a href="">linkedin</a>
+              <a href="">gmail</a>
+            </div>
           </div>
-        </div>
 
-        <fieldset>
-          <label for="name">Nombre</label>
-          <input type="text" name="name" placeholder="Tu Nombre" />
-          <label for="surname">Apellido</label>
-          <input type="text" name="surname" placeholder="Tu Apellido" />
-          <label for="surname">Email</label>
-          <input type="text" name="surname" placeholder="Tu Apellido" />
-        </fieldset>
+          <form class="container-box-form" action="">
+            <legend>Escribime</legend>
+            <div class="box-name-surname">
+              <label for="name"
+                >Nombre
+                <input type="text" name="name" required />
+              </label>
+              <label for="surname"
+                >Apellido
+                <input type="text" name="surname" required />
+              </label>
+            </div>
+            <div class="box-email-message">
+              <label for="email"
+                >E-mail
+                <input type="email" name="email" required />
+              </label>
+              <label for="message"
+                >Mensaje
+                <textarea
+                  name="message"
+                  id="text-area"
+                  maxlength="200"
+                  cols="30"
+                  rows="10"
+                  placeholder="Escriba un mensaje aquí"
+                ></textarea>
+              </label>
+            </div>
+
+            <input type="submit" name="send" id="send" value="Enviar" />
+          </form>
+        </div>
       </section>
     </main>
   </body>
