@@ -10,18 +10,22 @@
 
 <body>
   <header class="container-principal">
-    <nav class="container-box-encabezado">
-      <ul>
+    <nav class="container-box-encabezado" id="menu">
+      <div class="nav-box-controls">
+        <a href="#menu" class="open"></a>
+        <a href="" class="close"></a>
+    </div>
+      <ul class="nav-bar-links">
         <li><a href="#greeting">HOLA!</a></li>
         <li><a href="#knowledge">CONOCIMIENTOS</a></li>
         <li><a href="#projects">PROYECTOS</a></li>
-        <li><a id="button" href="#contact">CONTACTO</a></li>
+        <li><a id="button" class="button-nav" href="#contact">CONTACTO</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="container-box-greeting">
-    <a id="greeting" href="#"></a>
+  <main class="container-box-greeting" id="greeting">
+    <!-- <a  href="#"></a> -->
     <section class="container-greeting">
       <div class="box-greeting">
         <h1 class="title-greeting">
@@ -37,9 +41,9 @@
       </figure>
     </section>
 
-    <section class="container-knowledge">
+    <section class="container-knowledge" id="knowledge">
       <div class="box-knowledge">
-        <a id="knowledge" href="#"></a>
+        <!-- <a  href="#"></a> -->
         <h2 class="title-knowledge">Mis conocimientos</h2>
         <p class="description-knowledge">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
@@ -85,9 +89,9 @@
       <h4 class="author-quote">Richard Feynman</h4>
     </section>
 
-    <section class="container-box-project">
+    <section class="container-box-project" id="projects">
       <div class="box-project">
-        <a id="projects" href="#"></a>
+        <!-- <a  href="#"></a> -->
         <h2 class="title-project">Mis proyectos</h2>
         <p class="description-project">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ad
@@ -128,7 +132,7 @@
       </div>
     </section>
 
-    <section class="container-box-contact">
+    <section class="container-box-contact" id="contact">
       <div class="container-contact-form">
         <div class="box-contact">
           <h2>Contactame</h2>
@@ -140,19 +144,19 @@
           <div class="box-contact-logos">
             <div class="logo logo-instagram">
               <img src="./assets/assets-footer/instagram.png" alt="ig-logo" />
-              <a href="https://www.instagram.com/accounts/login/?hl=es">instagram</a>
+              <a href="https://www.instagram.com/accounts/login/?hl=es" target="_blank">instagram</a>
             </div>
             <div class="logo logo-github">
               <img src="./assets/assets-footer/github.png" alt="github-logo" />
-              <a href="https://github.com/botcarolinabritos">github</a>
+              <a href="https://github.com/botcarolinabritos" target="_blank">github</a>
             </div>
             <div class="logo logo-linkedin">
               <img src="./assets/assets-footer/linkedin.png" alt="linkedin-logo" />
-              <a href="https://www.linkedin.com/in/carolina-britos-baa42a28b/">linkedin</a>
+              <a href="https://www.linkedin.com/in/carolina-britos-baa42a28b/" target="_blank">linkedin</a>
             </div>
             <div class="logo logo-gmail">
               <img src="./assets/assets-footer/gmail-2.png" alt="gmail-logo" />
-              <a href="https://accounts.google.com/">gmail</a>
+              <a href="https://accounts.google.com/" target="_blank">gmail</a>
             </div>
           </div>
         </div>
@@ -191,11 +195,11 @@
         <li><a id="button" href="#contact">CONTACTO</a></li>
       </ul>
     </div>
-    <div class="box-end-links" id="contact">
-      <a href="https://www.instagram.com/accounts/login/?hl=es"><img src="./assets/assets-footer/instagram.png" alt="link-instagram"></a>
-      <a href="https://github.com/botcarolinabritos"><img src="./assets/assets-footer/github.png" alt="link-github"></a>
-      <a href="https://www.linkedin.com/in/carolina-britos-baa42a28b/"><img src="./assets/assets-footer/linkedin.png" alt="link-linkedin"></a>
-      <a href="https://accounts.google.com/"><img src="./assets/assets-footer/gmail-2.png" alt="link-gmail"></a>
+    <div class="box-end-links">
+      <a href="https://www.instagram.com/accounts/login/?hl=es" target="_blank"><img src="./assets/assets-footer/instagram.png" alt="link-instagram"></a>
+      <a href="https://github.com/botcarolinabritos" target="_blank"><img src="./assets/assets-footer/github.png" alt="link-github"></a>
+      <a href="https://www.linkedin.com/in/carolina-britos-baa42a28b/" target="_blank"><img src="./assets/assets-footer/linkedin.png" alt="link-linkedin"></a>
+      <a href="https://accounts.google.com/" target="_blank"><img src="./assets/assets-footer/gmail-2.png" alt="link-gmail"></a>
     </div>
     <div class="made-by">
       &copy; by Carolina 2024
