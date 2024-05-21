@@ -1,211 +1,281 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/siguiendo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Portfolio Carolina</title>
-</head>
+  <body>
+    <header class="container-principal">
+      <nav class="container-box-encabezado" id="menu">
+        <div class="nav-box-controls">
+          <a href="#menu" class="open"></a>
+          <a href="" class="close"></a>
+        </div>
+        <ul class="nav-bar-links">
+          <li><a href="#greeting">HOLA!</a></li>
+          <li><a href="#knowledge">CONOCIMIENTOS</a></li>
+          <li><a href="#projects">PROYECTOS</a></li>
+          <li>
+            <a id="button" class="button-nav" href="#contact">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <header class="container-principal">
-    <nav class="container-box-encabezado" id="menu">
-      <div class="nav-box-controls">
-        <a href="#menu" class="open"></a>
-        <a href="" class="close"></a>
-    </div>
-      <ul class="nav-bar-links">
-        <li><a href="#greeting">HOLA!</a></li>
-        <li><a href="#knowledge">CONOCIMIENTOS</a></li>
-        <li><a href="#projects">PROYECTOS</a></li>
-        <li><a id="button" class="button-nav" href="#contact">CONTACTO</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="container-box-greeting" id="greeting">
-    <!-- <a  href="#"></a> -->
-    <section class="container-greeting">
-      <div class="box-greeting">
-        <h1 class="title-greeting">
-          ¡Hola! Soy <span class="title-name">Carolina</span>
-        </h1>
-        <p class="description-greeting">
-          Desarrolladora y proteccionista de animales.
-        </p>
-        <a id="button" href="#projects">LO QUE HAGO</a>
-      </div>
-      <figure class="box-img">
-        <img src="./assets/profile-pic.png" alt="profile-pic" />
-      </figure>
-    </section>
-
-    <section class="container-knowledge" id="knowledge">
-      <div class="box-knowledge">
-        <!-- <a  href="#"></a> -->
-        <h2 class="title-knowledge">Mis conocimientos</h2>
-        <p class="description-knowledge">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
-          deserunt pariatur officiis omnis maxime ratione explicabo quia!
-        </p>
-      </div>
-      <div class="box-card-knowledge">
-        <div class="box box-html5">
-          <img src="./assets/assets-knowlegde/html5.png" alt="logo-html" />
-          <p class="box-card-txt">HTML 5</p>
-        </div>
-        <div class="box box-css3">
-          <img src="./assets/assets-knowlegde/css.png" alt="logo-css3" />
-          <p class="box-card-txt">CSS 3</p>
-        </div>
-        <div class="box box-git">
-          <img src="./assets/assets-knowlegde/git.png" alt="logo-git" />
-          <p class="box-card-txt">GIT</p>
-        </div>
-        <div class="box box-javascript">
-          <img src="./assets/assets-knowlegde/JavaScript-logo.png" alt="logo-javascript" />
-          <p>JavaScript</p>
-        </div>
-        <div class="box box-sass">
-          <img src="./assets/assets-knowlegde/sass.png" alt="logo-sass" />
-          <p>Sass</p>
-        </div>
-        <div class="box box-react">
-          <img src="./assets/assets-knowlegde/react.png" alt="logo-react" />
-          <p>React</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="container-box-quote">
-      <figure class="box-quote">
-        <img src="./assets/corazon.png" alt="" />
-      </figure>
-      <blockquote class="description-quote">
-        "If you want to dominate something, teach it. The more you teach, the
-        better you learn. Teaching is a powerful tool for learning"
-      </blockquote>
-      <h4 class="author-quote">Richard Feynman</h4>
-    </section>
-
-    <section class="container-box-project" id="projects">
-      <div class="box-project">
-        <!-- <a  href="#"></a> -->
-        <h2 class="title-project">Mis proyectos</h2>
-        <p class="description-project">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ad
-          voluptates consectetur, repudiandae, facilis praesentium possimus,
-          modi aliquam itaque fugit et veniam? Dolor quibusdam esse, delectus
-          repellendus velit ad quae.
-        </p>
-      </div>
-      <div class="card-box-project">
-        <div class="card box-portfolio">
-          <img src="./assets/assets-project/portfolio-img.png" alt="imagen-portfolio" />
-          <p class="proj-card-txt">Portfolio</p>
-        </div>
-        <div class="card box-generador">
-          <img src="./assets/assets-project/generador-memes.png" alt="imagen-generador-memes" />
-          <p class="proj-card-txt">Generador de memes</p>
-        </div>
-        <div class="card box-match">
-          <img src="./assets/assets-project/match-3.png" alt="imagen-match3" />
-          <p class="proj-card-txt">Match 3</p>
-        </div>
-        <div class="card box-gastos">
-          <img src="./assets/assets-project/cont-gastos.png" alt="imagen-controlador-gastos" />
-          <p class="proj-card-txt">Controlador de gastos</p>
-        </div>
-        <div class="card box-admin">
-          <img src="./assets/assets-project/admin-reuniones.png" alt="imagen-administrador-reuniones" />
-          <p class="proj-card-txt">Administrador de reuniones</p>
-        </div>
-        <div class="card box-app">
-          <img src="./assets/assets-project/todo-app-removebg-preview.png" alt="imagen-todo-app" />
-          <p class="proj-card-txt">Todo app</p>
-        </div>
-        <div class="card box-buscador">
-          <img src="./assets/assets-project/buscador-pelis.png" alt="imagen-buscador-peliculas" />
-          <p class="proj-card-txt">Buscador de películas</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="container-box-contact" id="contact">
-      <div class="container-contact-form">
-        <div class="box-contact">
-          <h2>Contactame</h2>
-          <p class="contact-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-            provident quibusdam, maiores vel error maxime voluptatum assumenda
-            ex totam corrupti. Fugiat, excepturi quam molestiae.
+    <main id="greeting">
+      <!-- <a  href="#"></a> -->
+      <section class="container-greeting">
+        <div class="box-greeting">
+          <h1 class="title-greeting">
+            ¡Hola! Soy <span class="title-name">Carolina</span>
+          </h1>
+          <p class="description-greeting">
+            Desarrolladora y proteccionista de animales.
           </p>
-          <div class="box-contact-logos">
-            <div class="logo logo-instagram">
-              <img src="./assets/assets-footer/instagram.png" alt="ig-logo" />
-              <a href="https://www.instagram.com/accounts/login/?hl=es" target="_blank">instagram</a>
-            </div>
-            <div class="logo logo-github">
-              <img src="./assets/assets-footer/github.png" alt="github-logo" />
-              <a href="https://github.com/botcarolinabritos" target="_blank">github</a>
-            </div>
-            <div class="logo logo-linkedin">
-              <img src="./assets/assets-footer/linkedin.png" alt="linkedin-logo" />
-              <a href="https://www.linkedin.com/in/carolina-britos-baa42a28b/" target="_blank">linkedin</a>
-            </div>
-            <div class="logo logo-gmail">
-              <img src="./assets/assets-footer/gmail-2.png" alt="gmail-logo" />
-              <a href="https://accounts.google.com/" target="_blank">gmail</a>
-            </div>
+          <a id="button" href="#projects">LO QUE HAGO</a>
+        </div>
+        <figure class="box-img">
+          <img src="./assets/profile-pic.png" alt="profile-pic" />
+        </figure>
+      </section>
+
+      <section class="container-knowledge" id="knowledge">
+        <div class="box-knowledge">
+          <!-- <a  href="#"></a> -->
+          <h2 class="title-knowledge">Mis conocimientos</h2>
+          <p class="description-knowledge">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
+            deserunt pariatur officiis omnis maxime ratione explicabo quia!
+          </p>
+        </div>
+        <div class="box-card-knowledge">
+          <div class="box box-html5">
+            <img src="./assets/assets-knowlegde/html5.png" alt="logo-html" />
+            <p class="box-card-txt">HTML 5</p>
+          </div>
+          <div class="box box-css3">
+            <img src="./assets/assets-knowlegde/css.png" alt="logo-css3" />
+            <p class="box-card-txt">CSS 3</p>
+          </div>
+          <div class="box box-git">
+            <img src="./assets/assets-knowlegde/git.png" alt="logo-git" />
+            <p class="box-card-txt">GIT</p>
+          </div>
+          <div class="box box-javascript">
+            <img
+              src="./assets/assets-knowlegde/JavaScript-logo.png"
+              alt="logo-javascript"
+            />
+            <p>JavaScript</p>
+          </div>
+          <div class="box box-sass">
+            <img src="./assets/assets-knowlegde/sass.png" alt="logo-sass" />
+            <p>Sass</p>
+          </div>
+          <div class="box box-react">
+            <img src="./assets/assets-knowlegde/react.png" alt="logo-react" />
+            <p>React</p>
           </div>
         </div>
+      </section>
 
-        <form class="container-box-form" action="">
-          <legend>Escribime</legend>
-          <div class="box-name-surname">
-            <label for="name">Nombre
-              <input type="text" name="name" required />
-            </label>
-            <label for="surname">Apellido
-              <input type="text" name="surname" required />
-            </label>
+      <section class="container-box-quote">
+        <figure class="box-quote">
+          <img src="./assets/corazon.png" alt="" />
+        </figure>
+        <blockquote class="description-quote">
+          "If you want to dominate something, teach it. The more you teach, the
+          better you learn. Teaching is a powerful tool for learning"
+        </blockquote>
+        <h4 class="author-quote">Richard Feynman</h4>
+      </section>
+
+      <section class="container-box-project" id="projects">
+        <div class="box-project">
+          <!-- <a  href="#"></a> -->
+          <h2 class="title-project">Mis proyectos</h2>
+          <p class="description-project">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ad
+            voluptates consectetur, repudiandae, facilis praesentium possimus,
+            modi aliquam itaque fugit et veniam? Dolor quibusdam esse, delectus
+            repellendus velit ad quae.
+          </p>
+        </div>
+        <div class="card-box-project">
+          <div class="card box-portfolio">
+            <img
+              src="./assets/assets-project/portfolio-img.png"
+              alt="imagen-portfolio"
+            />
+            <p class="proj-card-txt">Portfolio</p>
           </div>
-          <div class="box-email-message">
-            <label for="email">E-mail
-              <input type="email" name="email" required />
-            </label>
-            <label for="message">Mensaje
-              <textarea name="message" id="text-area" maxlength="200" cols="30" rows="10"
-                placeholder="Escriba un mensaje aquí"></textarea>
-            </label>
+          <div class="card box-generador">
+            <img
+              src="./assets/assets-project/generador-memes.png"
+              alt="imagen-generador-memes"
+            />
+            <p class="proj-card-txt">Generador de memes</p>
+          </div>
+          <div class="card box-match">
+            <img
+              src="./assets/assets-project/match-3.png"
+              alt="imagen-match3"
+            />
+            <p class="proj-card-txt">Match 3</p>
+          </div>
+          <div class="card box-gastos">
+            <img
+              src="./assets/assets-project/cont-gastos.png"
+              alt="imagen-controlador-gastos"
+            />
+            <p class="proj-card-txt">Controlador de gastos</p>
+          </div>
+          <div class="card box-admin">
+            <img
+              src="./assets/assets-project/admin-reuniones.png"
+              alt="imagen-administrador-reuniones"
+            />
+            <p class="proj-card-txt">Administrador de reuniones</p>
+          </div>
+          <div class="card box-app">
+            <img
+              src="./assets/assets-project/todo-app-removebg-preview.png"
+              alt="imagen-todo-app"
+            />
+            <p class="proj-card-txt">Todo app</p>
+          </div>
+          <div class="card box-buscador">
+            <img
+              src="./assets/assets-project/buscador-pelis.png"
+              alt="imagen-buscador-peliculas"
+            />
+            <p class="proj-card-txt">Buscador de películas</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-box-contact" id="contact">
+        <div class="container-contact-form">
+          <div class="box-contact">
+            <h2>Contactame</h2>
+            <p class="contact-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+              provident quibusdam, maiores vel error maxime voluptatum assumenda
+              ex totam corrupti. Fugiat, excepturi quam molestiae.
+            </p>
+            <div class="box-contact-logos">
+              <div class="logo logo-instagram">
+                <img src="./assets/assets-footer/instagram.png" alt="ig-logo" />
+                <a
+                  href="https://www.instagram.com/accounts/login/?hl=es"
+                  target="_blank"
+                  >instagram</a
+                >
+              </div>
+              <div class="logo logo-github">
+                <img
+                  src="./assets/assets-footer/github.png"
+                  alt="github-logo"
+                />
+                <a href="https://github.com/botcarolinabritos" target="_blank"
+                  >github</a
+                >
+              </div>
+              <div class="logo logo-linkedin">
+                <img
+                  src="./assets/assets-footer/linkedin.png"
+                  alt="linkedin-logo"
+                />
+                <a
+                  href="https://www.linkedin.com/in/carolina-britos-baa42a28b/"
+                  target="_blank"
+                  >linkedin</a
+                >
+              </div>
+              <div class="logo logo-gmail">
+                <img
+                  src="./assets/assets-footer/gmail-2.png"
+                  alt="gmail-logo"
+                />
+                <a href="https://accounts.google.com/" target="_blank">gmail</a>
+              </div>
+            </div>
           </div>
 
-          <input type="submit" name="send" id="send" value="Enviar" />
-        </form>
+          <form class="container-box-form" action="">
+            <legend>Escribime</legend>
+            <div class="box-name-surname">
+              <label for="name"
+                >Nombre
+                <input type="text" name="name" required />
+              </label>
+              <label for="surname"
+                >Apellido
+                <input type="text" name="surname" required />
+              </label>
+            </div>
+            <div class="box-email-message">
+              <label for="email"
+                >E-mail
+                <input type="email" name="email" required />
+              </label>
+              <label for="message"
+                >Mensaje
+                <textarea
+                  name="message"
+                  id="text-area"
+                  maxlength="200"
+                  cols="30"
+                  rows="10"
+                  placeholder="Escriba un mensaje aquí"
+                ></textarea>
+              </label>
+            </div>
+
+            <input type="submit" name="send" id="send" value="Enviar" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="container-box-end">
+      <div class="box-end">
+        <ul>
+          <li><a href="#greeting">HOLA</a></li>
+          <li><a href="#knowledge">CONOCIMIENTOS</a></li>
+          <li><a href="#projects">PROYECTOS</a></li>
+          <li><a id="button" href="#contact">CONTACTO</a></li>
+        </ul>
       </div>
-    </section>
-  </main>
-  <footer class="container-box-end">
-    <div class="box-end">
-      <ul>
-        <li><a href="#greeting">HOLA</a></li>
-        <li><a href="#knowledge">CONOCIMIENTOS</a></li>
-        <li><a href="#projects">PROYECTOS</a></li>
-        <li><a id="button" href="#contact">CONTACTO</a></li>
-      </ul>
-    </div>
-    <div class="box-end-links">
-      <a href="https://www.instagram.com/accounts/login/?hl=es" target="_blank"><img src="./assets/assets-footer/instagram.png" alt="link-instagram"></a>
-      <a href="https://github.com/botcarolinabritos" target="_blank"><img src="./assets/assets-footer/github.png" alt="link-github"></a>
-      <a href="https://www.linkedin.com/in/carolina-britos-baa42a28b/" target="_blank"><img src="./assets/assets-footer/linkedin.png" alt="link-linkedin"></a>
-      <a href="https://accounts.google.com/" target="_blank"><img src="./assets/assets-footer/gmail-2.png" alt="link-gmail"></a>
-    </div>
-    <div class="made-by">
-      &copy; by Carolina 2024
-      <img src="./assets/assets-footer/bear.png" alt="bear-emoji" />
-    </div>
-  </footer>
-</body>
-
+      <div class="box-end-links">
+        <a
+          href="https://www.instagram.com/accounts/login/?hl=es"
+          target="_blank"
+          ><img src="./assets/assets-footer/instagram.png" alt="link-instagram"
+        /></a>
+        <a href="https://github.com/botcarolinabritos" target="_blank"
+          ><img src="./assets/assets-footer/github.png" alt="link-github"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/carolina-britos-baa42a28b/"
+          target="_blank"
+          ><img src="./assets/assets-footer/linkedin.png" alt="link-linkedin"
+        /></a>
+        <a href="https://accounts.google.com/" target="_blank"
+          ><img src="./assets/assets-footer/gmail-2.png" alt="link-gmail"
+        /></a>
+      </div>
+      <div class="made-by">
+        &copy; by Carolina 2024
+        <img src="./assets/assets-footer/bear.png" alt="bear-emoji" />
+      </div>
+    </footer>
+  </body>
 </html>
