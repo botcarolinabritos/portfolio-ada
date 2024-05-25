@@ -127,13 +127,14 @@ a {
 
 .container-knowledge {
     max-width: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     text-align: center;
     background-color: #FFE3FF;
-    padding-bottom: 70px;
+    padding-bottom: 80px;
 }
 
 .box-knowledge {
@@ -145,13 +146,12 @@ a {
 
 .title-knowledge {
     font-size: 2.3rem;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .description-knowledge {
     width: 300px;
     padding-top: 20px;
-    padding-bottom: 40px;
 }
 
 .box-card-knowledge {
@@ -257,7 +257,6 @@ a {
     align-items: center;
     background-color: #ffe4ff;
     text-align: center;
-    padding-top: 10px;
     padding-bottom: 80px;
 }
 
@@ -280,6 +279,7 @@ a {
 }
 
 .card-box-project {
+    max-width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -411,7 +411,7 @@ a {
 }
 
 .box-contact-logos img {
-    width: 18px;
+    width: 21px;
 }
 
 .logo {
@@ -437,15 +437,14 @@ a {
     align-items: flex-start;
 }
 
-.box-name-surname {
-    display: flex;
-}
-
 legend {
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 23px;
     margin-bottom: 10px;
+}
+.box-name-surname {
+    display: flex;
 }
 
 .box-name-surname input {
@@ -557,6 +556,10 @@ input {
 
 /* MOBILE FIRST */
 
+@media (max-width: 1440px) {
+    
+}
+
 
 @media (max-width: 980px) {
 
@@ -643,10 +646,6 @@ input {
 
     /*CONTACT*/
     
-    .box-contact {
-        align-items: center;
-    }
-
     .container-box-contact{
         height: 125vh;
     }
@@ -655,11 +654,51 @@ input {
         flex-direction: column;
         padding: 30px;
     }
+    
+    .box-contact {
+        align-items: center;
+    }
+
+    .contact-description {
+        text-align: center;
+    }
+
+    .box-contact-logos {
+        width: 300px;
+        align-items: center;
+    }
+
+    .logo {
+        padding-left: 0;
+    }
+
+    .box-contact-logos {
+        width: 250px;
+    }
+
+    .logo {
+        padding-left: 0;
+        width: 60%;
+    }
+
+
+    /*FORM*/
 
     .container-box-form {
         align-items: center;
     }
 
+    .box-name-surname {
+        flex-direction: column;
+    }
+
+    .box-name-surname input {
+        margin-right: 0;
+    }
+
+    .box-email-message {
+        align-items: center;
+    }
 
 }
 
@@ -669,10 +708,14 @@ input {
     /*HEADER - NAV */
 
     .container-box-encabezado {
-        min-height: 80px;
-        display: flex;
+        height: 100px;
     }
 
+    .container-box-encabezado ul{
+        width: 100%;
+        height: 100%;
+        gap: 8px;
+    }
 
     #button.button-nav {
         padding: 0;
@@ -681,8 +724,10 @@ input {
     /*MENU HAMB */
 
     .nav-box-controls {
-        display: flex;
-        align-items: center;
+        width: 90px;
+        display: block;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .nav-box-controls .open {
@@ -690,8 +735,6 @@ input {
         width: 35px;
         height: 30px;
         background-image: url(./assets/assets-menu/Bars3.svg);
-        background-position: center;
-        background-size: contain;
         background-repeat: no-repeat;
     }
 
@@ -700,19 +743,12 @@ input {
         width: 35px;
         height: 30px;
         background-image: url(./assets/assets-menu/XCircle.svg);
-        background-position: left;
-        background-size: contain;
         background-repeat: no-repeat;
     }
 
     .nav-bar-links {
-        display: block;
         flex-direction: column;
-    }
-
-    .container-box-encabezado ul{
-        width: 100%;
-        gap: 5px;
+        justify-content: center;
     }
 
     .nav-bar-links a {
@@ -730,14 +766,6 @@ input {
         color: #000405;
     }
 
-    .close {
-        display: none;
-    }
-
-    #menu:target .nav-bar-links a {
-        display: block;
-    }
-
     #menu:target .open {
         display: none;
     }
@@ -745,7 +773,9 @@ input {
     #menu:target .close {
         display: block;
     }
-
+#menu:target .nav-bar-links a {
+        display: block;
+    }
 }
 
 
@@ -854,7 +884,7 @@ input {
     }
 
 
-    /*CONTACT*/
+    /*CONTACT - FORM*/
 
     .container-box-contact {
         background-image: radial-gradient(circle at bottom right, rgb(77, 225, 255), rgb(254, 178, 240), rgb(248, 150, 232));
@@ -866,14 +896,14 @@ input {
         border-radius: 0;
     }
 
-    input{
-        width: 130px;
+    .box-contact-logos {
+        width: 200px;
     }
 
-    #text-area {
-        width: 250px;
+    .logo {
+        padding-left: 0;
+        width: 60%;
     }
-
 
     /*FOOTER*/
 
